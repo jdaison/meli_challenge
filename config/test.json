@@ -1,0 +1,5 @@
+{
+  "port": 8080,
+  "baseUrl": "/api/v1",
+  "apiToken": "980568ed-ab80-42f4-8ce6-b03da59b38dc"
+}

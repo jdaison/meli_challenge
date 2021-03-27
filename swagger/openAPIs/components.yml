@@ -1,0 +1,56 @@
+securitySchemes:
+  bearerAuth:
+    type: http
+    scheme: bearer
+schemas:  
+  TopSecretRequest:
+    type: object
+    properties:
+      sattelites:
+        type: array
+        items:
+          type: object
+          properties:
+            name:
+              type: string
+              enum:
+                - kenobi
+                - skywalker
+                - sato
+              example: kenobi
+            distance:
+              type: number
+              example: 100
+            message:
+              type: array
+              items:
+                type: string
+                example: "este"
+  TopSecretResponse:
+    type: object
+    properties:
+      position:
+        type: object
+        properties:
+          x:
+            type: number,
+            example: -100.0
+          y:
+            type: number
+            example: 75.5
+      message:
+        type: string
+        example: "este es un mensaje secreto"
+  Authorization:
+    type: string
+    format: uuid
+    example: ab53c12e-095d-4a45-9fef-3c304b27f950        
+  500:
+    type: object
+    properties:
+      status:
+        type: integer
+        example: 500
+      message:
+        type: string
+        example: Internal Server Error

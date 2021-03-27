@@ -1,0 +1,8 @@
+- url: http://localhost:8080/v1
+  description: Local server
+- url: https://www.test.com/v1
+  description: Development server
+- url: https://www.test.com/v1
+  description: Stage
+- url: https://www.test.com/v1
+  description: Production server
