@@ -28,13 +28,23 @@ class TopSecretController extends BaseController {
       return
     }
 
-    const satellites: Satellites = {
+    const requestBody: Satellites = {
       ...body,
     }
 
-    const contactServices = new TopSecretService()
-    const position = await contactServices.GetLocation(1, 2, 3)
-    const message = await contactServices.GetMessage([""], [""], [""])
+    const topSecreService = new TopSecretService({
+      kenobi: [2, 3],
+      skywalker: [3, 4],
+      sato: [5, 2]
+    })
+    const messages: Array<Array<string>> = []
+    const distances: Array<number> = []
+    requestBody.satellites.forEach(satellite => {
+      messages.push(satellite.message)
+      distances.push(satellite.distance)
+    });
+    const position = topSecreService.GetLocation(distances)
+    const message = topSecreService.GetMessage(messages)
     const result: Result = {
       position,
       message
