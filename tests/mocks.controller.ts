@@ -82,31 +82,28 @@ export const satellites = {
   satellites: [
     {
       name: "kenobi",
-      distance: 100.0,
+      distance: 2,
       message: ["este", "", "", "mensaje", ""]
     },
     {
       name: "skywalker",
-      distance: 115.5,
+      distance: 2,
       message: ["", "es", "", "", "secreto"]
     },
     {
       name: "sato",
-      distance: 142.7,
+      distance: 2,
       message: ["este", "", "un", "", ""]
     }
   ]
 }
 
 export const resultPosition = {
-  x: -100,
-  y: 75.5,
+  x: 3.75,
+  y: 1.25,
 }
 
 export const resultResponse = {
-  position: {
-    x: -100,
-    y: 75.5,
-  },
+  position: resultPosition,
   message: "este es un mensaje secreto",
 }
