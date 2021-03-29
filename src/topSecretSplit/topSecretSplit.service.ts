@@ -23,6 +23,7 @@ class TopSecretSplitService {
 
   getPositionAndMessage(): Result | boolean {
     if (this.info.satellites.length != 3) {
+      this.info = { satellites: [] }
       return false
     }
     const topSecreService = new TopSecretService({

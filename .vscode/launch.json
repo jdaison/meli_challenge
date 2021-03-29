@@ -33,7 +33,7 @@
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
       "env": {
-        "NODE_ENV": "local",
+        "NODE_ENV": "lo",
         "API_TOKEN": "980568ed-ab80-42f4-8ce6-b03da59b38dc"
       },
       "skipFiles": [

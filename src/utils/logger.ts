@@ -1,6 +1,6 @@
 import * as httpContext from "express-http-context";
 import * as winston from "winston";
-const isLocal = process.env.NODE_ENV === "local";
+const isLocal = process.env.NODE_ENV === "lo";
 import * as packageJson from "../../package.json";
 
 export class Logger {
@@ -17,7 +17,7 @@ export class Logger {
         fileName: filename,
       },
     });
-    if (process.env.NODE_ENV === "local") {
+    if (process.env.NODE_ENV === "lo") {
       logger.add(
         new winston.transports.Console({
           format: winston.format.combine(
