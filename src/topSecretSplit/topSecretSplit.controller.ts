@@ -42,7 +42,6 @@ class TopSecretSplitController extends BaseController {
   }
 
   private async getPositionAndMessage(request: Request, response: Response) {
-
     const result = topSecretSplitService.getPositionAndMessage()
 
     if (!result) {
