@@ -28,7 +28,7 @@ describe("TopSecretSplitController", () => {
         .expect('Content-Type', /json/)
         .expect(404);
       expect(body).toMatchObject({
-        "errorMessage": "Can't get PositionAndMessage", "status": "ERROR"
+        "errorMessage": "Can't get PositionAndMessage information isn't enough", "status": "ERROR"
       });
     });
   });
