@@ -42,6 +42,7 @@ class TopSecretSplitService {
       position,
       message
     }
+    this.info = { satellites: [] }
     return result;
   }
 
