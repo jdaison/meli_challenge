@@ -49,6 +49,23 @@ class TopSecretController extends BaseController {
       position,
       message
     }
+    if (message === "") {
+      response.status(404).send({
+        status: "ERROR",
+        errorMessage: `Can't get message`,
+      });
+      logger.error("Request error", {
+        url: request.path,
+        method: request.method,
+        statusCode: 400,
+        success: false,
+        errorMessage: `Can't get message`,
+        parameters: request.params,
+        body: request.body,
+        execTime: new Date().getTime(),
+      });
+      return;
+    }
     response.send(result);
   }
 }
