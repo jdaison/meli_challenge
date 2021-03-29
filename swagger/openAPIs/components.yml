@@ -26,6 +26,17 @@ schemas:
               items:
                 type: string
                 example: "este"
+  TopSecretSplitRequest:
+    type: object
+    properties:
+      distance:
+        type: number
+        example: 2
+      message:
+        type: array
+        items:
+          type: string
+          example: "este"
   TopSecretResponse:
     type: object
     properties:
@@ -43,8 +54,14 @@ schemas:
         example: "este es un mensaje secreto"
   Authorization:
     type: string
-    format: uuid
-    example: ab53c12e-095d-4a45-9fef-3c304b27f950        
+    example: Bearer 980568ed-ab80-42f4-8ce6-b03da59b38dc
+  satelliteName:
+    type: string
+    enum:
+      - kenobi
+      - skywalker
+      - sato            
+    example: kenobi
   500:
     type: object
     properties:

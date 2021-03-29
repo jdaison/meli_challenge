@@ -1,8 +1,8 @@
-- url: http://localhost:8080/v1
+- url: http://localhost:8080/api/v1
   description: Local server
-- url: https://www.test.com/v1
+- url: https://www.test.com/api/v1
   description: Development server
-- url: https://www.test.com/v1
+- url: https://www.test.com/api/v1
   description: Stage
-- url: https://www.test.com/v1
+- url: https://meli-challenge-api-zc6ffxpcmq-uc.a.run.app/api/v1
   description: Production server
