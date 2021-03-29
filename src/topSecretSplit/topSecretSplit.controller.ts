@@ -48,14 +48,14 @@ class TopSecretSplitController extends BaseController {
     if (!result) {
       response.status(404).send({
         status: "ERROR",
-        errorMessage: `Can't get PositionAndMessage`,
+        errorMessage: `Can't get PositionAndMessage information isn't enough`,
       });
       logger.error("Request error", {
         url: request.path,
         method: request.method,
         statusCode: 404,
         success: false,
-        errorMessage: `Can't get PositionAndMessage`,
+        errorMessage: `Can't get PositionAndMessage information isn't enough`,
         parameters: request.params,
         body: request.body,
         execTime: new Date().getTime(),
