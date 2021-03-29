@@ -1,0 +1,11 @@
+description: Api services for meli-challenge
+version: 0.0.1
+title: Swagger meli-challenge
+termsOfService: https://www.mercadolibre.com/
+contact:
+  name: John Agudelo
+  email: jdaison@hotmail.com
+  url: https://www.linkedin.com/in/johnagudelo/
+license:
+  name: Apache 2.0
+  url: http://www.apache.org/licenses/LICENSE-2.0.html
