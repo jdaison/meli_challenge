@@ -1,5 +1,5 @@
-import TopSecretService from "../src/topSecret/topSecret.service";
-import { ResultPosition } from "../src/topSecret/topSecret.entity";
+import TopSecretService from "../../src/topSecret/topSecret.service";
+import { ResultPosition } from "../../src/topSecret/topSecret.entity";
 
 
 describe("TopSecretService", () => {

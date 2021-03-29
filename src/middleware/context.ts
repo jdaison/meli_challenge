@@ -32,7 +32,7 @@ export const contextMiddleware: (
     }
     const apiToken = process.env.API_TOKEN || config.get("apiToken")
 
-    if (headersError || (authorizationCode !== apiToken)) {
+    if (request.path.startsWith("/docs") === false && (headersError || (authorizationCode !== apiToken))) {
 
       logger.warn("INVALID_TOKEN", {
         errorMessage: "INVALID_TOKEN",

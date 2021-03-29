@@ -1,9 +1,9 @@
 import request from 'supertest';
-import server from "../src/server";
+import server from "../../src/server";
 import {
-  badSatellites, oneSatellite, satellitesInvalidName,
-  satellites, satellitesInvalidDistance, satellitesInvalidMessage, resultResponse
-} from './mocks.controller';
+  badSatellites, oneSatellite, satellitesInvalidName, satellites,
+  satellitesInvalidDistance, satellitesInvalidMessage, resultResponse
+} from './mocks.topSecret';
 import config from 'config';
 
 const apiToken = process.env.API_TOKEN || config.get("apiToken")
