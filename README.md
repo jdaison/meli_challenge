@@ -22,4 +22,9 @@ npm run test
 ``` 
 
 ## Swagger documentation
-start the app and then open next url in your browser http://localhost:8080/docs/
+start the app and then open next url in your browser in dev http://localhost:8080/docs/ or production https://meli-challenge-api-zc6ffxpcmq-uc.a.run.app/docs
+
+## Postman classes
+Import this link into postman https://www.getpostman.com/collections/32d355adedd6891e0ab7
+
+
